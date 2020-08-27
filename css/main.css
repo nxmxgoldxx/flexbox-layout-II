@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*Large Background Image*/
 html {
   background-color: #222;
   height: 100%;
@@ -110,7 +110,15 @@ body {
   height: 100%;
 }
 
-.wrapper {
+.wrapper-1 {
+  /*add display:flex and set justify-content to space-between*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.wrapper-2 {
   /*add display:flex and set justify-content to space-between*/
     display: flex;
     flex-flow: row wrap;
@@ -120,16 +128,30 @@ body {
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  display: flex;
+  display: flex-flow:grow;
   justify-content: center;
   align-items: center;
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
-  /*  width: 30%; */
+  width: 30%;
   height: auto;
 }
 
+.div-4, .div-5 {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  width: 100%;
+  height: auto;
+}
+
+
+}
 
 .wrapper span {
   font-family: 'Lora', sans-serif;
